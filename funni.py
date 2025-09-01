@@ -17,8 +17,8 @@ def DoTheFunni():
     if alpha <= 0:
         alpha = 1
 
-        width = random.randint(0, root.winfo_screenwidth() / 2)
-        height = random.randint(0, root.winfo_screenheight() / 2)
+        width = random.randint(0, int(root.winfo_screenwidth() / 2))
+        height = random.randint(0, int(root.winfo_screenheight() / 2))
         root.geometry(f"+{width}+{height}")
     else:
         alpha = alpha - 0.1
